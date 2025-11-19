@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Linux.do - 一个专注于 Linux 技术交流的中文社区">
+    <title>Linux.do - Linux 中文技术社区</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+
+        .logo {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .tagline {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .about-section {
+            background: white;
+            padding: 60px;
+            border-radius: 15px;
+            margin: 50px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            color: #667eea;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 2;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            min-width: 200px;
+            margin: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #667eea;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 2px solid white;
+            transition: opacity 0.3s;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .tagline {
+                font-size: 1rem;
+            }
+
+            .about-section {
+                padding: 30px 20px;
+            }
+
+            .about-section h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🐧</div>
+            <h1>Linux.do</h1>
+            <p class="tagline">专注于 Linux 技术交流的开放式中文社区</p>
+            <a href="https://linux.do" class="cta-button" target="_blank">访问社区 →</a>
+        </header>
+
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">💬</div>
+                <h3>开放交流</h3>
+                <p>一个自由、开放的技术交流平台，欢迎所有对 Linux 和开源技术感兴趣的朋友加入讨论。</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎓</div>
+                <h3>知识分享</h3>
+                <p>从入门到精通，涵盖 Linux 系统管理、运维、开发等各个方面的知识和经验分享。</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🤝</div>
+                <h3>互帮互助</h3>
+                <p>遇到问题？这里有热心的社区成员随时准备为你解答，共同成长，共同进步。</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>技术前沿</h3>
+                <p>及时了解 Linux 生态系统的最新动态，掌握前沿技术趋势和最佳实践。</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🛠️</div>
+                <h3>实战经验</h3>
+                <p>分享真实的项目实战经验，学习生产环境中的问题解决方案和优化技巧。</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🌏</div>
+                <h3>开源精神</h3>
+                <p>秉承开源精神，推动中文 Linux 社区的发展，让技术惠及更多人。</p>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h2>关于 Linux.do</h2>
+            <p>
+                Linux.do 是一个专注于 Linux 和开源技术的中文社区平台。我们致力于为中文用户提供一个高质量的技术交流环境，
+                让每个热爱 Linux 的人都能在这里找到归属感。
+            </p>
+            <p>
+                无论你是刚开始接触 Linux 的新手，还是经验丰富的系统管理员、运维工程师或开发者，
+                都可以在这里找到志同道合的伙伴，分享经验，解决问题，共同学习成长。
+            </p>
+            <p>
+                社区涵盖了 Linux 发行版、服务器运维、云计算、容器技术、自动化运维、Shell 编程、
+                系统调优、安全加固等多个技术领域。我们相信，通过开放和包容的交流，
+                能够让中文 Linux 社区变得更加繁荣和强大。
+            </p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-number">∞</span>
+                <span class="stat-label">技术话题</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">🌟</span>
+                <span class="stat-label">活跃社区</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">📚</span>
+                <span class="stat-label">知识库</span>
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                访问 <a href="https://linux.do" target="_blank">linux.do</a> 加入我们的社区
+            </p>
+            <p style="margin-top: 20px; opacity: 0.8;">
+                © 2024 Linux.do Community | 开源 · 分享 · 成长
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
